@@ -17,14 +17,11 @@ layout: default
     {% for dev in site.data.contributions.devs %}
       <div class="col-sm-2 mb-4">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{ dev.avatar }}"  onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name={{ dev.name }}'" alt=""></a>
+          <a href="{{ dev.github_url }}"><img class="card-img-top" src="{{ dev.avatar }}"  onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name={{ dev.name }}'" alt=""></a>
           <div class="card-body">
             <h5 class="card-title">
               <p class="developer-name">{{ dev.name }}</p>
             </h5>
-            <p class="card-text">
-                <a href="{{ dev.github_url }}"><i class="fa fa-github fa-2x links-hover"></i></a>
-            </p>
           </div>
         </div>
       </div>
